@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "../ui/button";
+import { FormError } from "../form-error";
+import { FormSucces } from "../form-succes";
 
 export const LoginForm = () => {
   const form = useForm<z.infer<typeof LoginSchema>>({
@@ -72,7 +74,8 @@ export const LoginForm = () => {
               )}
             />
           </div>
-
+          <FormError message="Something went wrong!" />
+          <FormSucces message="Success"/>
           <Button type="submit" className="w-full">
             Sign in
           </Button>
