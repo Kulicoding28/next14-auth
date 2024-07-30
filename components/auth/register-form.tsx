@@ -15,9 +15,9 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { FormError } from "@/components/form-error";
-import { FormSucces } from "@/components/form-succes";
+import { Button } from "../ui/button";
+import { FormError } from "../form-error";
+import { FormSucces } from "../form-succes";
 import { useState, useTransition } from "react";
 import { register } from "@/actions/register";
 
